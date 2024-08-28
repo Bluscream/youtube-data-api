@@ -1,0 +1,19 @@
+
+<h2>ChannelConversionPing</h2>
+<ul class="parameter">
+  <li class="param-required-false">context : String
+    <br/>Defines the context of the ping.
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>subscribe</dd>
+            <dd>unsubscribe</dd>
+            <dd>cview</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">conversionUrl : String
+    <br/>The url (without the schema) that the player shall send the ping to. It&#x27;s at caller&#x27;s descretion to decide which schema to use (http vs https) Example of a returned url: //googleads.g.doubleclick.net/pagead/ viewthroughconversion/962985656/?data&#x3D;path%3DtHe_path%3Btype%3D cview%3Butuid%3DGISQtTNGYqaYl4sKxoVvKA&amp;labe&#x3D;default The caller must append biscotti authentication (ms param in case of mobile, for example) to this ping.
+  </li>
+</ul>

@@ -1,0 +1,58 @@
+
+<h2>ActivitySnippet</h2>
+<ul class="parameter">
+  <li class="param-required-false">channelId : String
+    <br/>The ID that YouTube uses to uniquely identify the channel associated with the activity.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">channelTitle : String
+    <br/>Channel title for the channel responsible for this activity
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">description : String
+    <br/>The description of the resource primarily associated with the activity. @mutable youtube.activities.insert
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">groupId : String
+    <br/>The group ID associated with the activity. A group ID identifies user events that are associated with the same user and resource. For example, if a user rates a video and marks the same video as a favorite, the entries for those events would have the same group ID in the user&#x27;s activity feed. In your user interface, you can avoid repetition by grouping events with the same groupId value.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">publishedAt : Date
+    <br/>The date and time that the video was uploaded.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">thumbnails : ThumbnailDetails
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">title : String
+    <br/>The title of the resource primarily associated with the activity.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">type : String
+    <br/>The type of activity that the resource describes.
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>typeUnspecified</dd>
+            <dd>upload</dd>
+            <dd>like</dd>
+            <dd>favorite</dd>
+            <dd>comment</dd>
+            <dd>subscription</dd>
+            <dd>playlistItem</dd>
+            <dd>recommendation</dd>
+            <dd>bulletin</dd>
+            <dd>social</dd>
+            <dd>channelItem</dd>
+            <dd>promotedItem</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>

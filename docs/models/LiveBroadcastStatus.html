@@ -1,0 +1,68 @@
+
+<h2>LiveBroadcastStatus</h2>
+<ul class="parameter">
+  <li class="param-required-false">lifeCycleStatus : String
+    <br/>The broadcast&#x27;s status. The status can be updated using the API&#x27;s liveBroadcasts.transition method.
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>lifeCycleStatusUnspecified</dd>
+            <dd>created</dd>
+            <dd>ready</dd>
+            <dd>testing</dd>
+            <dd>live</dd>
+            <dd>complete</dd>
+            <dd>revoked</dd>
+            <dd>testStarting</dd>
+            <dd>liveStarting</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">liveBroadcastPriority : String
+    <br/>Priority of the live broadcast event (internal state).
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>liveBroadcastPriorityUnspecified</dd>
+            <dd>low</dd>
+            <dd>normal</dd>
+            <dd>high</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">madeForKids : Boolean
+    <br/>Whether the broadcast is made for kids or not, decided by YouTube instead of the creator. This field is read only.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">privacyStatus : String
+    <br/>The broadcast&#x27;s privacy status. Note that the broadcast represents exactly one YouTube video, so the privacy settings are identical to those supported for videos. In addition, you can set this field by modifying the broadcast resource or by setting the privacyStatus field of the corresponding video resource.
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>public</dd>
+            <dd>unlisted</dd>
+            <dd>private</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">recordingStatus : String
+    <br/>The broadcast&#x27;s recording status.
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>liveBroadcastRecordingStatusUnspecified</dd>
+            <dd>notRecording</dd>
+            <dd>recording</dd>
+            <dd>recorded</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">selfDeclaredMadeForKids : Boolean
+    <br/>This field will be set to True if the creator declares the broadcast to be kids only: go/live-cw-work.
+  </li>
+</ul>

@@ -1,0 +1,84 @@
+
+<h2>LiveChatMessageSnippet</h2>
+<ul class="parameter">
+  <li class="param-required-false">authorChannelId : String
+    <br/>The ID of the user that authored this message, this field is not always filled. textMessageEvent - the user that wrote the message fanFundingEvent - the user that funded the broadcast newSponsorEvent - the user that just became a sponsor messageDeletedEvent - the moderator that took the action messageRetractedEvent - the author that retracted their message userBannedEvent - the moderator that took the action superChatEvent - the user that made the purchase
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">displayMessage : String
+    <br/>Contains a string that can be displayed to the user. If this field is not present the message is silent, at the moment only messages of type TOMBSTONE and CHAT_ENDED_EVENT are silent.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">fanFundingEventDetails : LiveChatFanFundingEventDetails
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">hasDisplayContent : Boolean
+    <br/>Whether the message has display content that should be displayed to users.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">liveChatId : String
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">messageDeletedDetails : LiveChatMessageDeletedDetails
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">messageRetractedDetails : LiveChatMessageRetractedDetails
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">publishedAt : Date
+    <br/>The date and time when the message was orignally published.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">superChatDetails : LiveChatSuperChatDetails
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">superStickerDetails : LiveChatSuperStickerDetails
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">textMessageDetails : LiveChatTextMessageDetails
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">type : String
+    <br/>The type of message, this will always be present, it determines the contents of the message as well as which fields will be present.
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>invalidType</dd>
+            <dd>textMessageEvent</dd>
+            <dd>tombstone</dd>
+            <dd>fanFundingEvent</dd>
+            <dd>chatEndedEvent</dd>
+            <dd>sponsorOnlyModeStartedEvent</dd>
+            <dd>sponsorOnlyModeEndedEvent</dd>
+            <dd>newSponsorEvent</dd>
+            <dd>messageDeletedEvent</dd>
+            <dd>messageRetractedEvent</dd>
+            <dd>userBannedEvent</dd>
+            <dd>superChatEvent</dd>
+            <dd>superStickerEvent</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">userBannedDetails : LiveChatUserBannedMessageDetails
+    <br/>
+  </li>
+</ul>

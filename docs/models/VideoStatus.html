@@ -1,0 +1,98 @@
+
+<h2>VideoStatus</h2>
+<ul class="parameter">
+  <li class="param-required-false">embeddable : Boolean
+    <br/>This value indicates if the video can be embedded on another website. @mutable youtube.videos.insert youtube.videos.update
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">failureReason : String
+    <br/>This value explains why a video failed to upload. This property is only present if the uploadStatus property indicates that the upload failed.
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>conversion</dd>
+            <dd>invalidFile</dd>
+            <dd>emptyFile</dd>
+            <dd>tooSmall</dd>
+            <dd>codec</dd>
+            <dd>uploadAborted</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">license : String
+    <br/>The video&#x27;s license. @mutable youtube.videos.insert youtube.videos.update
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>youtube</dd>
+            <dd>creativeCommon</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">madeForKids : Boolean
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">privacyStatus : String
+    <br/>The video&#x27;s privacy status.
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>public</dd>
+            <dd>unlisted</dd>
+            <dd>private</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">publicStatsViewable : Boolean
+    <br/>This value indicates if the extended video statistics on the watch page can be viewed by everyone. Note that the view count, likes, etc will still be visible if this is disabled. @mutable youtube.videos.insert youtube.videos.update
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">publishAt : Date
+    <br/>The date and time when the video is scheduled to publish. It can be set only if the privacy status of the video is private..
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">rejectionReason : String
+    <br/>This value explains why YouTube rejected an uploaded video. This property is only present if the uploadStatus property indicates that the upload was rejected.
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>copyright</dd>
+            <dd>inappropriate</dd>
+            <dd>duplicate</dd>
+            <dd>termsOfUse</dd>
+            <dd>uploaderAccountSuspended</dd>
+            <dd>length</dd>
+            <dd>claim</dd>
+            <dd>uploaderAccountClosed</dd>
+            <dd>trademark</dd>
+            <dd>legal</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">selfDeclaredMadeForKids : Boolean
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">uploadStatus : String
+    <br/>The status of the uploaded video.
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>uploaded</dd>
+            <dd>processed</dd>
+            <dd>failed</dd>
+            <dd>rejected</dd>
+            <dd>deleted</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>

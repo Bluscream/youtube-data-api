@@ -1,0 +1,58 @@
+
+<h2>VideoFileDetails</h2>
+<ul class="parameter">
+  <li class="param-required-false">audioStreams : List
+    <br/>A list of audio streams contained in the uploaded video file. Each item in the list contains detailed metadata about an audio stream.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">bitrateBps : String
+    <br/>The uploaded video file&#x27;s combined (video and audio) bitrate in bits per second.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">container : String
+    <br/>The uploaded video file&#x27;s container format.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">creationTime : String
+    <br/>The date and time when the uploaded video file was created. The value is specified in ISO 8601 format. Currently, the following ISO 8601 formats are supported: - Date only: YYYY-MM-DD - Naive time: YYYY-MM-DDTHH:MM:SS - Time with timezone: YYYY-MM-DDTHH:MM:SS+HH:MM 
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">durationMs : String
+    <br/>The length of the uploaded video in milliseconds.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">fileName : String
+    <br/>The uploaded file&#x27;s name. This field is present whether a video file or another type of file was uploaded.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">fileSize : String
+    <br/>The uploaded file&#x27;s size in bytes. This field is present whether a video file or another type of file was uploaded.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">fileType : String
+    <br/>The uploaded file&#x27;s type as detected by YouTube&#x27;s video processing engine. Currently, YouTube only processes video files, but this field is present whether a video file or another type of file was uploaded.
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>video</dd>
+            <dd>audio</dd>
+            <dd>image</dd>
+            <dd>archive</dd>
+            <dd>document</dd>
+            <dd>project</dd>
+            <dd>other</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">videoStreams : List
+    <br/>A list of video streams contained in the uploaded video file. Each item in the list contains detailed metadata about a video stream.
+  </li>
+</ul>

@@ -1,0 +1,427 @@
+<div class="main-content">
+  <h2><a name=""></a></h2>
+  <p>This is the  API</p>
+
+  <h2><a name="youtube.channels.list"></a>youtube.channels.list</h2>
+  <hr>
+  <p></p>
+  <p>Retrieves a list of resources, possibly filtered.</p>
+  <h3 class="section">URL</h3>
+  <code>https://youtube.googleapis.com//youtube/v3/channels</code>
+  <h3 class="section">HTTP Method</h3>
+  <code>GET</code>
+  <h3 class="section">Response Type</h3>
+  <div class="model" data-model="ChannelListResponse"><a href="">ChannelListResponse</a></div>
+  <h3 class="section">Parameters</h3>
+  <ul>
+	  <li class="parameter">
+      
+      <span class="param-in">Query: </span>
+      
+      
+      
+      <span class="param-name">part</span>
+      <span class="param-type">List(String)</span>
+      
+      <p class="param-description">The *part* parameter specifies a comma-separated list of one or more channel resource properties that the API response will include. If the parameter identifies a property that contains child properties, the child properties will be included in the response. For example, in a channel resource, the contentDetails property contains other properties, such as the uploads properties. As such, if you set *part&#x3D;contentDetails*, the API response will also contain all of those nested properties.</p>
+	  </li>
+	  <li class="parameter">
+      
+      <span class="param-in">Query: </span>
+      
+      
+      
+      <span class="param-name">$.xgafv</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">V1 error format.</p>
+	  </li>
+	  <li class="parameter">
+      
+      <span class="param-in">Query: </span>
+      
+      
+      
+      <span class="param-name">access_token</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">OAuth access token.</p>
+	  </li>
+	  <li class="parameter">
+      
+      <span class="param-in">Query: </span>
+      
+      
+      
+      <span class="param-name">alt</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">Data format for response.</p>
+	  </li>
+	  <li class="parameter">
+      
+      <span class="param-in">Query: </span>
+      
+      
+      
+      <span class="param-name">callback</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">JSONP</p>
+	  </li>
+	  <li class="parameter">
+      
+      <span class="param-in">Query: </span>
+      
+      
+      
+      <span class="param-name">fields</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">Selector specifying which fields to include in a partial response.</p>
+	  </li>
+	  <li class="parameter">
+      
+      <span class="param-in">Query: </span>
+      
+      
+      
+      <span class="param-name">key</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token.</p>
+	  </li>
+	  <li class="parameter">
+      
+      <span class="param-in">Query: </span>
+      
+      
+      
+      <span class="param-name">oauth_token</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">OAuth 2.0 token for the current user.</p>
+	  </li>
+	  <li class="parameter">
+      
+      <span class="param-in">Query: </span>
+      
+      
+      
+      <span class="param-name">prettyPrint</span>
+      <span class="param-type">Boolean</span>
+      
+      <p class="param-description">Returns response with indentations and line breaks.</p>
+	  </li>
+	  <li class="parameter">
+      
+      <span class="param-in">Query: </span>
+      
+      
+      
+      <span class="param-name">quotaUser</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.</p>
+	  </li>
+	  <li class="parameter">
+      
+      <span class="param-in">Query: </span>
+      
+      
+      
+      <span class="param-name">upload_protocol</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">Upload protocol for media (e.g. \&quot;raw\&quot;, \&quot;multipart\&quot;).</p>
+	  </li>
+	  <li class="parameter">
+      
+      <span class="param-in">Query: </span>
+      
+      
+      
+      <span class="param-name">uploadType</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">Legacy upload protocol for media (e.g. \&quot;media\&quot;, \&quot;multipart\&quot;).</p>
+	  </li>
+	  <li class="parameter">
+      
+      <span class="param-in">Query: </span>
+      
+      
+      
+      <span class="param-name">categoryId</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">Return the channels within the specified guide category ID.</p>
+	  </li>
+	  <li class="parameter">
+      
+      <span class="param-in">Query: </span>
+      
+      
+      
+      <span class="param-name">forUsername</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">Return the channel associated with a YouTube username.</p>
+	  </li>
+	  <li class="parameter">
+      
+      <span class="param-in">Query: </span>
+      
+      
+      
+      <span class="param-name">hl</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">Stands for \&quot;host language\&quot;. Specifies the localization language of the metadata to be filled into snippet.localized. The field is filled with the default metadata if there is no localization in the specified language. The parameter value must be a language code included in the list returned by the i18nLanguages.list method (e.g. en_US, es_MX).</p>
+	  </li>
+	  <li class="parameter">
+      
+      <span class="param-in">Query: </span>
+      
+      
+      
+      <span class="param-name">id</span>
+      <span class="param-type">List(String)</span>
+      
+      <p class="param-description">Return the channels with the specified IDs.</p>
+	  </li>
+	  <li class="parameter">
+      
+      <span class="param-in">Query: </span>
+      
+      
+      
+      <span class="param-name">managedByMe</span>
+      <span class="param-type">Boolean</span>
+      
+      <p class="param-description">Return the channels managed by the authenticated user.</p>
+	  </li>
+	  <li class="parameter">
+      
+      <span class="param-in">Query: </span>
+      
+      
+      
+      <span class="param-name">maxResults</span>
+      <span class="param-type">Integer</span>
+      
+      <p class="param-description">The *maxResults* parameter specifies the maximum number of items that should be returned in the result set.</p>
+	  </li>
+	  <li class="parameter">
+      
+      <span class="param-in">Query: </span>
+      
+      
+      
+      <span class="param-name">mine</span>
+      <span class="param-type">Boolean</span>
+      
+      <p class="param-description">Return the ids of channels owned by the authenticated user.</p>
+	  </li>
+	  <li class="parameter">
+      
+      <span class="param-in">Query: </span>
+      
+      
+      
+      <span class="param-name">mySubscribers</span>
+      <span class="param-type">Boolean</span>
+      
+      <p class="param-description">Return the channels subscribed to the authenticated user</p>
+	  </li>
+	  <li class="parameter">
+      
+      <span class="param-in">Query: </span>
+      
+      
+      
+      <span class="param-name">onBehalfOfContentOwner</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">*Note:* This parameter is intended exclusively for YouTube content partners. The *onBehalfOfContentOwner* parameter indicates that the request&#x27;s authorization credentials identify a YouTube CMS user who is acting on behalf of the content owner specified in the parameter value. This parameter is intended for YouTube content partners that own and manage many different YouTube channels. It allows content owners to authenticate once and get access to all their video and channel data, without having to provide authentication credentials for each individual channel. The CMS account that the user authenticates with must be linked to the specified YouTube content owner.</p>
+	  </li>
+	  <li class="parameter">
+      
+      <span class="param-in">Query: </span>
+      
+      
+      
+      <span class="param-name">pageToken</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">The *pageToken* parameter identifies a specific page in the result set that should be returned. In an API response, the nextPageToken and prevPageToken properties identify other pages that could be retrieved.</p>
+	  </li>
+  </ul>
+  <h2><a name="youtube.channels.update"></a>youtube.channels.update</h2>
+  <hr>
+  <p></p>
+  <p>Updates an existing resource.</p>
+  <h3 class="section">URL</h3>
+  <code>https://youtube.googleapis.com//youtube/v3/channels</code>
+  <h3 class="section">HTTP Method</h3>
+  <code>PUT</code>
+  <h3 class="section">Response Type</h3>
+  <div class="model" data-model="Channel"><a href="">Channel</a></div>
+  <h3 class="section">Parameters</h3>
+  <ul>
+	  <li class="parameter">
+      
+      <span class="param-in">Query: </span>
+      
+      
+      
+      <span class="param-name">part</span>
+      <span class="param-type">List(String)</span>
+      
+      <p class="param-description">The *part* parameter serves two purposes in this operation. It identifies the properties that the write operation will set as well as the properties that the API response will include. The API currently only allows the parameter value to be set to either brandingSettings or invideoPromotion. (You cannot update both of those parts with a single request.) Note that this method overrides the existing values for all of the mutable properties that are contained in any parts that the parameter value specifies.</p>
+	  </li>
+	  <li class="parameter">
+      
+      
+      
+      
+      <span class="param-in">Body: </span>
+      <span class="param-name">body</span>
+      <span class="param-type">Channel(Channel)</span>
+      
+      <p class="param-description"></p>
+	  </li>
+	  <li class="parameter">
+      
+      <span class="param-in">Query: </span>
+      
+      
+      
+      <span class="param-name">$.xgafv</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">V1 error format.</p>
+	  </li>
+	  <li class="parameter">
+      
+      <span class="param-in">Query: </span>
+      
+      
+      
+      <span class="param-name">access_token</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">OAuth access token.</p>
+	  </li>
+	  <li class="parameter">
+      
+      <span class="param-in">Query: </span>
+      
+      
+      
+      <span class="param-name">alt</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">Data format for response.</p>
+	  </li>
+	  <li class="parameter">
+      
+      <span class="param-in">Query: </span>
+      
+      
+      
+      <span class="param-name">callback</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">JSONP</p>
+	  </li>
+	  <li class="parameter">
+      
+      <span class="param-in">Query: </span>
+      
+      
+      
+      <span class="param-name">fields</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">Selector specifying which fields to include in a partial response.</p>
+	  </li>
+	  <li class="parameter">
+      
+      <span class="param-in">Query: </span>
+      
+      
+      
+      <span class="param-name">key</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token.</p>
+	  </li>
+	  <li class="parameter">
+      
+      <span class="param-in">Query: </span>
+      
+      
+      
+      <span class="param-name">oauth_token</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">OAuth 2.0 token for the current user.</p>
+	  </li>
+	  <li class="parameter">
+      
+      <span class="param-in">Query: </span>
+      
+      
+      
+      <span class="param-name">prettyPrint</span>
+      <span class="param-type">Boolean</span>
+      
+      <p class="param-description">Returns response with indentations and line breaks.</p>
+	  </li>
+	  <li class="parameter">
+      
+      <span class="param-in">Query: </span>
+      
+      
+      
+      <span class="param-name">quotaUser</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.</p>
+	  </li>
+	  <li class="parameter">
+      
+      <span class="param-in">Query: </span>
+      
+      
+      
+      <span class="param-name">upload_protocol</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">Upload protocol for media (e.g. \&quot;raw\&quot;, \&quot;multipart\&quot;).</p>
+	  </li>
+	  <li class="parameter">
+      
+      <span class="param-in">Query: </span>
+      
+      
+      
+      <span class="param-name">uploadType</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">Legacy upload protocol for media (e.g. \&quot;media\&quot;, \&quot;multipart\&quot;).</p>
+	  </li>
+	  <li class="parameter">
+      
+      <span class="param-in">Query: </span>
+      
+      
+      
+      <span class="param-name">onBehalfOfContentOwner</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">The *onBehalfOfContentOwner* parameter indicates that the authenticated user is acting on behalf of the content owner specified in the parameter value. This parameter is intended for YouTube content partners that own and manage many different YouTube channels. It allows content owners to authenticate once and get access to all their video and channel data, without having to provide authentication credentials for each individual channel. The actual CMS account that the user authenticates with needs to be linked to the specified YouTube content owner.</p>
+	  </li>
+  </ul>
+</div>

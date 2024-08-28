@@ -1,0 +1,70 @@
+
+<h2>VideoContentDetails</h2>
+<ul class="parameter">
+  <li class="param-required-false">caption : String
+    <br/>The value of captions indicates whether the video has captions or not.
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>true</dd>
+            <dd>false</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">contentRating : ContentRating
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">countryRestriction : AccessPolicy
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">definition : String
+    <br/>The value of definition indicates whether the video is available in high definition or only in standard definition.
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>sd</dd>
+            <dd>hd</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">dimension : String
+    <br/>The value of dimension indicates whether the video is available in 3D or in 2D.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">duration : String
+    <br/>The length of the video. The tag value is an ISO 8601 duration in the format PT#M#S, in which the letters PT indicate that the value specifies a period of time, and the letters M and S refer to length in minutes and seconds, respectively. The # characters preceding the M and S letters are both integers that specify the number of minutes (or seconds) of the video. For example, a value of PT15M51S indicates that the video is 15 minutes and 51 seconds long.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">hasCustomThumbnail : Boolean
+    <br/>Indicates whether the video uploader has provided a custom thumbnail image for the video. This property is only visible to the video uploader.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">licensedContent : Boolean
+    <br/>The value of is_license_content indicates whether the video is licensed content.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">projection : String
+    <br/>Specifies the projection format of the video.
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>rectangular</dd>
+            <dd>360</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">regionRestriction : VideoContentDetailsRegionRestriction
+    <br/>
+  </li>
+</ul>

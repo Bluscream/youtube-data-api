@@ -1,0 +1,480 @@
+<div class="main-content">
+  <h2><a name=""></a></h2>
+  <p>This is the  API</p>
+
+  <h2><a name="youtube.search.list"></a>youtube.search.list</h2>
+  <hr>
+  <p></p>
+  <p>Retrieves a list of search resources</p>
+  <h3 class="section">URL</h3>
+  <code>https://youtube.googleapis.com//youtube/v3/search</code>
+  <h3 class="section">HTTP Method</h3>
+  <code>GET</code>
+  <h3 class="section">Response Type</h3>
+  <div class="model" data-model="SearchListResponse"><a href="">SearchListResponse</a></div>
+  <h3 class="section">Parameters</h3>
+  <ul>
+	  <li class="parameter">
+      
+      <span class="param-in">Query: </span>
+      
+      
+      
+      <span class="param-name">part</span>
+      <span class="param-type">List(String)</span>
+      
+      <p class="param-description">The *part* parameter specifies a comma-separated list of one or more search resource properties that the API response will include. Set the parameter value to snippet.</p>
+	  </li>
+	  <li class="parameter">
+      
+      <span class="param-in">Query: </span>
+      
+      
+      
+      <span class="param-name">$.xgafv</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">V1 error format.</p>
+	  </li>
+	  <li class="parameter">
+      
+      <span class="param-in">Query: </span>
+      
+      
+      
+      <span class="param-name">access_token</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">OAuth access token.</p>
+	  </li>
+	  <li class="parameter">
+      
+      <span class="param-in">Query: </span>
+      
+      
+      
+      <span class="param-name">alt</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">Data format for response.</p>
+	  </li>
+	  <li class="parameter">
+      
+      <span class="param-in">Query: </span>
+      
+      
+      
+      <span class="param-name">callback</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">JSONP</p>
+	  </li>
+	  <li class="parameter">
+      
+      <span class="param-in">Query: </span>
+      
+      
+      
+      <span class="param-name">fields</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">Selector specifying which fields to include in a partial response.</p>
+	  </li>
+	  <li class="parameter">
+      
+      <span class="param-in">Query: </span>
+      
+      
+      
+      <span class="param-name">key</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token.</p>
+	  </li>
+	  <li class="parameter">
+      
+      <span class="param-in">Query: </span>
+      
+      
+      
+      <span class="param-name">oauth_token</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">OAuth 2.0 token for the current user.</p>
+	  </li>
+	  <li class="parameter">
+      
+      <span class="param-in">Query: </span>
+      
+      
+      
+      <span class="param-name">prettyPrint</span>
+      <span class="param-type">Boolean</span>
+      
+      <p class="param-description">Returns response with indentations and line breaks.</p>
+	  </li>
+	  <li class="parameter">
+      
+      <span class="param-in">Query: </span>
+      
+      
+      
+      <span class="param-name">quotaUser</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.</p>
+	  </li>
+	  <li class="parameter">
+      
+      <span class="param-in">Query: </span>
+      
+      
+      
+      <span class="param-name">upload_protocol</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">Upload protocol for media (e.g. \&quot;raw\&quot;, \&quot;multipart\&quot;).</p>
+	  </li>
+	  <li class="parameter">
+      
+      <span class="param-in">Query: </span>
+      
+      
+      
+      <span class="param-name">uploadType</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">Legacy upload protocol for media (e.g. \&quot;media\&quot;, \&quot;multipart\&quot;).</p>
+	  </li>
+	  <li class="parameter">
+      
+      <span class="param-in">Query: </span>
+      
+      
+      
+      <span class="param-name">channelId</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">Filter on resources belonging to this channelId.</p>
+	  </li>
+	  <li class="parameter">
+      
+      <span class="param-in">Query: </span>
+      
+      
+      
+      <span class="param-name">channelType</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">Add a filter on the channel search.</p>
+	  </li>
+	  <li class="parameter">
+      
+      <span class="param-in">Query: </span>
+      
+      
+      
+      <span class="param-name">eventType</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">Filter on the livestream status of the videos.</p>
+	  </li>
+	  <li class="parameter">
+      
+      <span class="param-in">Query: </span>
+      
+      
+      
+      <span class="param-name">forContentOwner</span>
+      <span class="param-type">Boolean</span>
+      
+      <p class="param-description">Search owned by a content owner.</p>
+	  </li>
+	  <li class="parameter">
+      
+      <span class="param-in">Query: </span>
+      
+      
+      
+      <span class="param-name">forDeveloper</span>
+      <span class="param-type">Boolean</span>
+      
+      <p class="param-description">Restrict the search to only retrieve videos uploaded using the project id of the authenticated user.</p>
+	  </li>
+	  <li class="parameter">
+      
+      <span class="param-in">Query: </span>
+      
+      
+      
+      <span class="param-name">forMine</span>
+      <span class="param-type">Boolean</span>
+      
+      <p class="param-description">Search for the private videos of the authenticated user.</p>
+	  </li>
+	  <li class="parameter">
+      
+      <span class="param-in">Query: </span>
+      
+      
+      
+      <span class="param-name">location</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">Filter on location of the video</p>
+	  </li>
+	  <li class="parameter">
+      
+      <span class="param-in">Query: </span>
+      
+      
+      
+      <span class="param-name">locationRadius</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">Filter on distance from the location (specified above).</p>
+	  </li>
+	  <li class="parameter">
+      
+      <span class="param-in">Query: </span>
+      
+      
+      
+      <span class="param-name">maxResults</span>
+      <span class="param-type">Integer</span>
+      
+      <p class="param-description">The *maxResults* parameter specifies the maximum number of items that should be returned in the result set.</p>
+	  </li>
+	  <li class="parameter">
+      
+      <span class="param-in">Query: </span>
+      
+      
+      
+      <span class="param-name">onBehalfOfContentOwner</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">*Note:* This parameter is intended exclusively for YouTube content partners. The *onBehalfOfContentOwner* parameter indicates that the request&#x27;s authorization credentials identify a YouTube CMS user who is acting on behalf of the content owner specified in the parameter value. This parameter is intended for YouTube content partners that own and manage many different YouTube channels. It allows content owners to authenticate once and get access to all their video and channel data, without having to provide authentication credentials for each individual channel. The CMS account that the user authenticates with must be linked to the specified YouTube content owner.</p>
+	  </li>
+	  <li class="parameter">
+      
+      <span class="param-in">Query: </span>
+      
+      
+      
+      <span class="param-name">order</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">Sort order of the results.</p>
+	  </li>
+	  <li class="parameter">
+      
+      <span class="param-in">Query: </span>
+      
+      
+      
+      <span class="param-name">pageToken</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">The *pageToken* parameter identifies a specific page in the result set that should be returned. In an API response, the nextPageToken and prevPageToken properties identify other pages that could be retrieved.</p>
+	  </li>
+	  <li class="parameter">
+      
+      <span class="param-in">Query: </span>
+      
+      
+      
+      <span class="param-name">publishedAfter</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">Filter on resources published after this date.</p>
+	  </li>
+	  <li class="parameter">
+      
+      <span class="param-in">Query: </span>
+      
+      
+      
+      <span class="param-name">publishedBefore</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">Filter on resources published before this date.</p>
+	  </li>
+	  <li class="parameter">
+      
+      <span class="param-in">Query: </span>
+      
+      
+      
+      <span class="param-name">q</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">Textual search terms to match.</p>
+	  </li>
+	  <li class="parameter">
+      
+      <span class="param-in">Query: </span>
+      
+      
+      
+      <span class="param-name">regionCode</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">Display the content as seen by viewers in this country.</p>
+	  </li>
+	  <li class="parameter">
+      
+      <span class="param-in">Query: </span>
+      
+      
+      
+      <span class="param-name">relatedToVideoId</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">Search related to a resource.</p>
+	  </li>
+	  <li class="parameter">
+      
+      <span class="param-in">Query: </span>
+      
+      
+      
+      <span class="param-name">relevanceLanguage</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">Return results relevant to this language.</p>
+	  </li>
+	  <li class="parameter">
+      
+      <span class="param-in">Query: </span>
+      
+      
+      
+      <span class="param-name">safeSearch</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">Indicates whether the search results should include restricted content as well as standard content.</p>
+	  </li>
+	  <li class="parameter">
+      
+      <span class="param-in">Query: </span>
+      
+      
+      
+      <span class="param-name">topicId</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">Restrict results to a particular topic.</p>
+	  </li>
+	  <li class="parameter">
+      
+      <span class="param-in">Query: </span>
+      
+      
+      
+      <span class="param-name">type</span>
+      <span class="param-type">List(String)</span>
+      
+      <p class="param-description">Restrict results to a particular set of resource types from One Platform.</p>
+	  </li>
+	  <li class="parameter">
+      
+      <span class="param-in">Query: </span>
+      
+      
+      
+      <span class="param-name">videoCaption</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">Filter on the presence of captions on the videos.</p>
+	  </li>
+	  <li class="parameter">
+      
+      <span class="param-in">Query: </span>
+      
+      
+      
+      <span class="param-name">videoCategoryId</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">Filter on videos in a specific category.</p>
+	  </li>
+	  <li class="parameter">
+      
+      <span class="param-in">Query: </span>
+      
+      
+      
+      <span class="param-name">videoDefinition</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">Filter on the definition of the videos.</p>
+	  </li>
+	  <li class="parameter">
+      
+      <span class="param-in">Query: </span>
+      
+      
+      
+      <span class="param-name">videoDimension</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">Filter on 3d videos.</p>
+	  </li>
+	  <li class="parameter">
+      
+      <span class="param-in">Query: </span>
+      
+      
+      
+      <span class="param-name">videoDuration</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">Filter on the duration of the videos.</p>
+	  </li>
+	  <li class="parameter">
+      
+      <span class="param-in">Query: </span>
+      
+      
+      
+      <span class="param-name">videoEmbeddable</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">Filter on embeddable videos.</p>
+	  </li>
+	  <li class="parameter">
+      
+      <span class="param-in">Query: </span>
+      
+      
+      
+      <span class="param-name">videoLicense</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">Filter on the license of the videos.</p>
+	  </li>
+	  <li class="parameter">
+      
+      <span class="param-in">Query: </span>
+      
+      
+      
+      <span class="param-name">videoSyndicated</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">Filter on syndicated videos.</p>
+	  </li>
+	  <li class="parameter">
+      
+      <span class="param-in">Query: </span>
+      
+      
+      
+      <span class="param-name">videoType</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">Filter on videos of a specific type.</p>
+	  </li>
+  </ul>
+</div>

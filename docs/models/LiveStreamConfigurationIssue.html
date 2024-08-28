@@ -1,0 +1,67 @@
+
+<h2>LiveStreamConfigurationIssue</h2>
+<ul class="parameter">
+  <li class="param-required-false">description : String
+    <br/>The long-form description of the issue and how to resolve it.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">reason : String
+    <br/>The short-form reason for this issue.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">severity : String
+    <br/>How severe this issue is to the stream.
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>info</dd>
+            <dd>warning</dd>
+            <dd>error</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">type : String
+    <br/>The kind of error happening.
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>gopSizeOver</dd>
+            <dd>gopSizeLong</dd>
+            <dd>gopSizeShort</dd>
+            <dd>openGop</dd>
+            <dd>badContainer</dd>
+            <dd>audioBitrateHigh</dd>
+            <dd>audioBitrateLow</dd>
+            <dd>audioSampleRate</dd>
+            <dd>bitrateHigh</dd>
+            <dd>bitrateLow</dd>
+            <dd>audioCodec</dd>
+            <dd>videoCodec</dd>
+            <dd>noAudioStream</dd>
+            <dd>noVideoStream</dd>
+            <dd>multipleVideoStreams</dd>
+            <dd>multipleAudioStreams</dd>
+            <dd>audioTooManyChannels</dd>
+            <dd>interlacedVideo</dd>
+            <dd>frameRateHigh</dd>
+            <dd>resolutionMismatch</dd>
+            <dd>videoCodecMismatch</dd>
+            <dd>videoInterlaceMismatch</dd>
+            <dd>videoProfileMismatch</dd>
+            <dd>videoBitrateMismatch</dd>
+            <dd>framerateMismatch</dd>
+            <dd>gopMismatch</dd>
+            <dd>audioSampleRateMismatch</dd>
+            <dd>audioStereoMismatch</dd>
+            <dd>audioCodecMismatch</dd>
+            <dd>audioBitrateMismatch</dd>
+            <dd>videoResolutionSuboptimal</dd>
+            <dd>videoResolutionUnsupported</dd>
+            <dd>videoIngestionStarved</dd>
+            <dd>videoIngestionFasterThanRealtime</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>

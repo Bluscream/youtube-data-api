@@ -1,0 +1,58 @@
+
+<h2>VideoProcessingDetails</h2>
+<ul class="parameter">
+  <li class="param-required-false">editorSuggestionsAvailability : String
+    <br/>This value indicates whether video editing suggestions, which might improve video quality or the playback experience, are available for the video. You can retrieve these suggestions by requesting the suggestions part in your videos.list() request.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">fileDetailsAvailability : String
+    <br/>This value indicates whether file details are available for the uploaded video. You can retrieve a video&#x27;s file details by requesting the fileDetails part in your videos.list() request.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">processingFailureReason : String
+    <br/>The reason that YouTube failed to process the video. This property will only have a value if the processingStatus property&#x27;s value is failed.
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>uploadFailed</dd>
+            <dd>transcodeFailed</dd>
+            <dd>streamingFailed</dd>
+            <dd>other</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">processingIssuesAvailability : String
+    <br/>This value indicates whether the video processing engine has generated suggestions that might improve YouTube&#x27;s ability to process the the video, warnings that explain video processing problems, or errors that cause video processing problems. You can retrieve these suggestions by requesting the suggestions part in your videos.list() request.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">processingProgress : VideoProcessingDetailsProcessingProgress
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">processingStatus : String
+    <br/>The video&#x27;s processing status. This value indicates whether YouTube was able to process the video or if the video is still being processed.
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>processing</dd>
+            <dd>succeeded</dd>
+            <dd>failed</dd>
+            <dd>terminated</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">tagSuggestionsAvailability : String
+    <br/>This value indicates whether keyword (tag) suggestions are available for the video. Tags can be added to a video&#x27;s metadata to make it easier for other users to find the video. You can retrieve these suggestions by requesting the suggestions part in your videos.list() request.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">thumbnailsAvailability : String
+    <br/>This value indicates whether thumbnail images have been generated for the video.
+  </li>
+</ul>

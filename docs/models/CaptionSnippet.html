@@ -1,0 +1,96 @@
+
+<h2>CaptionSnippet</h2>
+<ul class="parameter">
+  <li class="param-required-false">audioTrackType : String
+    <br/>The type of audio track associated with the caption track.
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>unknown</dd>
+            <dd>primary</dd>
+            <dd>commentary</dd>
+            <dd>descriptive</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">failureReason : String
+    <br/>The reason that YouTube failed to process the caption track. This property is only present if the state property&#x27;s value is failed.
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>unknownFormat</dd>
+            <dd>unsupportedFormat</dd>
+            <dd>processingFailed</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">isAutoSynced : Boolean
+    <br/>Indicates whether YouTube synchronized the caption track to the audio track in the video. The value will be true if a sync was explicitly requested when the caption track was uploaded. For example, when calling the captions.insert or captions.update methods, you can set the sync parameter to true to instruct YouTube to sync the uploaded track to the video. If the value is false, YouTube uses the time codes in the uploaded caption track to determine when to display captions.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">isCC : Boolean
+    <br/>Indicates whether the track contains closed captions for the deaf and hard of hearing. The default value is false.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">isDraft : Boolean
+    <br/>Indicates whether the caption track is a draft. If the value is true, then the track is not publicly visible. The default value is false. @mutable youtube.captions.insert youtube.captions.update
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">isEasyReader : Boolean
+    <br/>Indicates whether caption track is formatted for \&quot;easy reader,\&quot; meaning it is at a third-grade level for language learners. The default value is false.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">isLarge : Boolean
+    <br/>Indicates whether the caption track uses large text for the vision-impaired. The default value is false.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">language : String
+    <br/>The language of the caption track. The property value is a BCP-47 language tag.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">lastUpdated : Date
+    <br/>The date and time when the caption track was last updated.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">name : String
+    <br/>The name of the caption track. The name is intended to be visible to the user as an option during playback.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">status : String
+    <br/>The caption track&#x27;s status.
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>serving</dd>
+            <dd>syncing</dd>
+            <dd>failed</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">trackKind : String
+    <br/>The caption track&#x27;s type.
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>standard</dd>
+            <dd>ASR</dd>
+            <dd>forced</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">videoId : String
+    <br/>The ID that YouTube uses to uniquely identify the video associated with the caption track. @mutable youtube.captions.insert
+  </li>
+</ul>

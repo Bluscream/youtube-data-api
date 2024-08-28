@@ -1,0 +1,92 @@
+
+<h2>CommentSnippet</h2>
+<ul class="parameter">
+  <li class="param-required-false">authorChannelId : CommentSnippetAuthorChannelId
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">authorChannelUrl : String
+    <br/>Link to the author&#x27;s YouTube channel, if any.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">authorDisplayName : String
+    <br/>The name of the user who posted the comment.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">authorProfileImageUrl : String
+    <br/>The URL for the avatar of the user who posted the comment.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">canRate : Boolean
+    <br/>Whether the current viewer can rate this comment.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">channelId : String
+    <br/>The id of the corresponding YouTube channel. In case of a channel comment this is the channel the comment refers to. In case of a video comment it&#x27;s the video&#x27;s channel.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">likeCount : Integer
+    <br/>The total number of likes this comment has received.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">moderationStatus : String
+    <br/>The comment&#x27;s moderation status. Will not be set if the comments were requested through the id filter.
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>published</dd>
+            <dd>heldForReview</dd>
+            <dd>likelySpam</dd>
+            <dd>rejected</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">parentId : String
+    <br/>The unique id of the parent comment, only set for replies.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">publishedAt : Date
+    <br/>The date and time when the comment was originally published.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">textDisplay : String
+    <br/>The comment&#x27;s text. The format is either plain text or HTML dependent on what has been requested. Even the plain text representation may differ from the text originally posted in that it may replace video links with video titles etc.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">textOriginal : String
+    <br/>The comment&#x27;s original raw text as initially posted or last updated. The original text will only be returned if it is accessible to the viewer, which is only guaranteed if the viewer is the comment&#x27;s author.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">updatedAt : Date
+    <br/>The date and time when the comment was last updated.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">videoId : String
+    <br/>The ID of the video the comment refers to, if any.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">viewerRating : String
+    <br/>The rating the viewer has given to this comment. For the time being this will never return RATE_TYPE_DISLIKE and instead return RATE_TYPE_NONE. This may change in the future.
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>none</dd>
+            <dd>like</dd>
+            <dd>dislike</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
